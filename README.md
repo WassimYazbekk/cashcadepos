@@ -72,6 +72,10 @@ feel free to submit a pull request. I review pull requests on a weekly basis.
 - Include tests for any new features or bug fixes.
 - Submit your pull request with a clear description of what you've done.
 
+## TODO
+
+[] Create the project TODO list.
+
 ## License
 
-This project is under the <a href="https://github.com/WassimYazbekk/cashcadepos/blob/master/LICENSE">MIT LICENSE</a>
+This project is licensed under the <a href="https://github.com/WassimYazbekk/cashcadepos/blob/master/LICENSE">MIT LICENSE</a>
