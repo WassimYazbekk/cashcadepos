@@ -1,0 +1,5 @@
+export const START_SERVER = 'start-server'
+export const SERVER_STARTED = 'server-started'
+export const START_SERVER_FAILED = 'start-server-failed'
+export const CLOSE_SERVER = 'close-server'
+export const SERVER_CLOSED = 'server-closed'
