@@ -74,7 +74,7 @@ feel free to submit a pull request. I review pull requests on a weekly basis.
 
 ## TODO
 
-[ ] Create the project TODO list.
+- [ ] Create the project TODO list.
 
 ## License
 
