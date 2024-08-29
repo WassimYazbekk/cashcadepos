@@ -1,5 +1,5 @@
-appId: com.electron.app
-productName: cashcade
+appId: com.cashcadepos.app
+productName: Cashcade
 directories:
   buildResources: build
 files:
@@ -10,9 +10,17 @@ files:
   - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
 asarUnpack:
+  - node_modules/better-sqlite3
+  - node_modules/pdf-to-printer
+  - node_modules/pdfkit
+  - node_modules/body-parser
+  - node_modules/axios
+  - node_modules/express
+  - out/main/chunks/*.node
   - resources/**
+afterSign: build/notarize.js
 win:
-  executableName: cashcade
+  executableName: Cashcade
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -25,7 +33,6 @@ mac:
     - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
     - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
-  notarize: false
 dmg:
   artifactName: ${name}-${version}.${ext}
 linux:
@@ -39,5 +46,6 @@ appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
 publish:
-  provider: generic
-  url: https://example.com/auto-updates
+  provider: github
+  owner: WassimYazbekk
+  repo: cashcadepos
